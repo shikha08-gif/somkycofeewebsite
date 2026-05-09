@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smokey Coffee</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">☕ Smokey</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+  </nav>
+
+  <div class="nav-btns">
+    <button class="cart-btn">🛒 Cart</button>
+    <button class="login-btn">👤 Login</button>
+  </div>
+</header>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div class="auth-container">
+      <h2 id="authTitle">☕ Login</h2>
+      
+      <form id="authForm">
+        <input type="text" id="authUsername" placeholder="👤 Username" required>
+        <input type="password" id="authPassword" placeholder="🔒 Password" required>
+        <input type="password" id="authConfirm" placeholder="🔒 Confirm Password" class="hidden">
+        
+        <!-- ✅ FIXED BUTTON -->
+        <button type="submit" id="authBtn">Login Now</button>
+      </form>
+      
+      <p id="authMsg"></p>
+      
+      <p class="toggle-auth">
+        Don't have an account? <span onclick="toggleAuthMode()">Register here</span>
+      </p>
+
+      <!-- ✅ ADDED FORGOT PASSWORD -->
+      <p style="font-size:12px;">
+        <span onclick="forgotPassword()" style="cursor:pointer;color:#6f4e37;">
+          Forgot Password?
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ EVERYTHING BELOW IS YOUR ORIGINAL (UNCHANGED) -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Premium Coffee</h1>
+    <p>Discover the best coffee experience crafted with passion ☕</p>
+    <button>Shop Now</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+  </div>
+</section>
+
+<!-- CATEGORY -->
+<section class="categories">
+  <h2>Explore Categories</h2>
+
+  <div class="cat-container">
+    <div class="cat">☕<p>Iced Coffee</p></div>
+    <div class="cat">🍰<p>Cake</p></div>
+    <div class="cat">🥐<p>Croissant</p></div>
+    <div class="cat">🌱<p>Beans</p></div>
+    <div class="cat">🏪<p>Shop</p></div>
+    <div class="cat">🍫<p>Mocha</p></div>
+    <div class="cat">🥛<p>Latte</p></div>
+    <div class="cat">🔥<p>Hot</p></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>Popular Coffee</h2>
+
+  <div class="product-container">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+      <h3>Iced Latte</h3>
+      <p>₹120</p>
+      <button>Add</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096">
+      <h3>Chocolate Coffee</h3>
+      <p>₹150</p>
+      <button>Add</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+      <h3>Cold Brew</h3>
+      <p>₹180</p>
+      <button>Add</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+      <h3>Cappuccino</h3>
+      <p>₹140</p>
+      <button>Add</button>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog">
+  <h2>Coffee Stories</h2>
+
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e">
+      <h3>How Coffee is Made</h3>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+      <h3>Best Brewing Methods</h3>
+    </div>
+    <div class="blog-container">
+    <div class="blog-card">
+      <img src="mohamed-hassouna-N4gtuEZ5gWc-unsplash.jpg">
+      <h3>muffins and bakings</h3>
+    </div>
+  </div>
+    <div class="blog-container">
+    <div class="blog-card">
+      <img src="nathan-dumlao-vZOZJH_xkUk-unsplash.jpg">
+      <h3>ice latte</h3>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="join">
+  <h2>Join Our Team ☕</h2>
+
+<form class="vacancy-form">
+    <input placeholder="👤 Full Name" required>
+    <input placeholder="📧 Email" required>
+    <input placeholder="💼 Position" required>
+    <textarea placeholder="Why should we hire you?" required></textarea>
+    <button type="submit">Apply</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Smokey Coffee</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
